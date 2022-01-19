@@ -1,0 +1,89 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #96c1f8;
+}
+
+header {
+    height: 100px;
+    /* Ecris à la suite */ 
+    
+}
+
+h1 {
+    text-align: center;
+    color:white;  
+}
+
+#bateau {
+    transform: translate(0,500px);
+    animation: 8s deplacement forwards;
+}
+
+    @keyframes deplacement {
+        from {
+            margin-right: 1050px;
+        }
+
+        to {
+            margin-left: 1050px;
+        }
+    }
+
+section{
+    background-image:url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: -20px;
+    /* Ecris à la suite */
+}
+
+section div {
+    height: 100px;
+    width: 100px;
+    background-color: #80CEE1;
+    margin: 5px;
+    
+}
+
+section div:hover{
+    border-radius: 50px;
+    transform: rotate(360deg);
+    transition-delay: 0.5s;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section div:nth-child(3){
+    background-color: grey;
+}
+
+
+footer{
+    background-color: #235A8C;
+    height: 250px;
+    background-color: #5ee1e6;
+    /* Ecris à la suite */
+    text-align: center;
+
+}
+
+footer p {
+    
+    color:white;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+strong {
+    font-weight: normal;
+}
+
+#tresor {
+    cursor:grab;
+}
